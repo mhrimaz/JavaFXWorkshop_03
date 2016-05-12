@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxworkshop_03.FXMLDocumentController">
+    <children>
+      <TextField id="display_style" fx:id="displayField" alignment="CENTER_RIGHT" editable="false" layoutX="12.0" layoutY="14.0" prefHeight="69.0" prefWidth="413.0" promptText="0" stylesheets="@../res/buttonStyle.css" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="14.0" />
+      <VBox layoutX="342.0" layoutY="104.0" prefHeight="409.0" prefWidth="82.0" spacing="24.0" AnchorPane.bottomAnchor="23.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="104.0">
+         <children>
+            <Button id="operator_style" fx:id="button112" alignment="CENTER" onAction="#handleOperatorButtonAction" prefHeight="62.0" prefWidth="82.0" stylesheets="@../res/buttonStyle.css" text="X" VBox.vgrow="ALWAYS" />
+            <Button id="operator_style" fx:id="button111" alignment="CENTER" onAction="#handleOperatorButtonAction" prefHeight="62.0" prefWidth="82.0" stylesheets="@../res/buttonStyle.css" text="÷" VBox.vgrow="ALWAYS" />
+            <Button id="operator_style" fx:id="button11" alignment="CENTER" onAction="#handleOperatorButtonAction" prefHeight="62.0" prefWidth="82.0" stylesheets="@../res/buttonStyle.css" text="+" VBox.vgrow="ALWAYS" />
+            <Button id="operator_style" fx:id="button1" alignment="CENTER" onAction="#handleOperatorButtonAction" prefHeight="62.0" prefWidth="82.0" stylesheets="@../res/buttonStyle.css" text="-" VBox.vgrow="ALWAYS" />
+              <Button id="equal_sign_style" fx:id="button" alignment="CENTER" onAction="#handleOperatorButtonAction" prefHeight="69.0" prefWidth="82.0" stylesheets="@../res/buttonStyle.css" text="=" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <GridPane alignment="CENTER" layoutX="14.0" layoutY="172.0" prefHeight="356.0" prefWidth="316.0" style="-fx-alignment: Alignment.Center;" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="172.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Button id="numeric_style" fx:id="button1121" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11211" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11212" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11213" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11214" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11215" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11216" onAction="#handleOperatorButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="±" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11217" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11218" onAction="#handleOperatorButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button11219" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button112110" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button id="numeric_style" fx:id="button112111" onAction="#handleNumericButtonAction" prefHeight="70.0" prefWidth="75.0" stylesheets="@../res/buttonStyle.css" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+         </children>
+      </GridPane>
+      <HBox layoutX="128.0" layoutY="104.0" spacing="25.0" AnchorPane.bottomAnchor="385.0" AnchorPane.rightAnchor="129.0">
+         <children>
+            <Button id="operator_style" fx:id="button1123" alignment="CENTER" onAction="#handleOperatorButtonAction" prefHeight="62.0" prefWidth="82.0" stylesheets="@../res/buttonStyle.css" text="C" />
+            <Button id="operator_style" fx:id="button1122" alignment="CENTER" onAction="#handleOperatorButtonAction" prefHeight="62.0" prefWidth="82.0" stylesheets="@../res/buttonStyle.css" text="&lt;" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
